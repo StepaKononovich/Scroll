@@ -9,8 +9,8 @@
 <body>
 	<div class="text">0</div>
 	<div class="light"></div>
+	<div class="block sc_15">&#8224;</div>
 	<div class="dub">
-		<div class="block sc_15"></div>
 	</div>
 	<style>
 		body, 
@@ -61,10 +61,13 @@
 		}
 
 		.sc_15 {
-			width: 1px;
-			height: 1px;
+			width: 100%;
+			font-weight: bold;
+			text-align: center;
+			font-size: 115px;
 			top: 9500px;
-            border: 0px solid black;
+			border: 0px;
+			background: none;
 		}
 
 	</style>
@@ -121,7 +124,7 @@
 				object.style.cssText = stElem;
 				dub.appendChild(object);
 			}else{
-				object = document.querySelector(element)
+				object = document.querySelector(element);
 			}
 
 			let scrollNow = document.documentElement.scrollTop;
